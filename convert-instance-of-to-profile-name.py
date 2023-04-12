@@ -14,7 +14,7 @@ profile_map = {
     "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-coding-status-values": "CodingStatusValues",
     "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate": "DeathCertificate",
     "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document": "DeathCertificateDocument",
-    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certification": "DeathCertificationProcedure",
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certification": "DeathCertification",
     "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-date": "DeathDate",
     "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-location": "DeathLocation",
     "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent": "Decedent",
