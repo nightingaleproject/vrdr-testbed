@@ -1,0 +1,11 @@
+/workspaces/vrdr-testbed/VRDR/bin/Debug/netstandard2.0/DeathRecord.deps.json
+/workspaces/vrdr-testbed/VRDR/bin/Debug/netstandard2.0/DeathRecord.dll
+/workspaces/vrdr-testbed/VRDR/bin/Debug/netstandard2.0/DeathRecord.pdb
+/workspaces/vrdr-testbed/VRDR/bin/Debug/netstandard2.0/DeathRecord.xml
+/workspaces/vrdr-testbed/VRDR/obj/Debug/netstandard2.0/DeathRecord.csproj.AssemblyReference.cache
+/workspaces/vrdr-testbed/VRDR/obj/Debug/netstandard2.0/DeathRecord.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/vrdr-testbed/VRDR/obj/Debug/netstandard2.0/DeathRecord.AssemblyInfoInputs.cache
+/workspaces/vrdr-testbed/VRDR/obj/Debug/netstandard2.0/DeathRecord.AssemblyInfo.cs
+/workspaces/vrdr-testbed/VRDR/obj/Debug/netstandard2.0/DeathRecord.csproj.CoreCompileInputs.cache
+/workspaces/vrdr-testbed/VRDR/obj/Debug/netstandard2.0/DeathRecord.dll
+/workspaces/vrdr-testbed/VRDR/obj/Debug/netstandard2.0/DeathRecord.pdb
