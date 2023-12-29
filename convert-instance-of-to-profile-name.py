@@ -55,9 +55,12 @@ output_file = sys.argv[2]
 with open(input_file, "r") as f_in:
     content = f_in.read()
     for url, profile_name in profile_map.items():
-        #pattern = f"(InstanceOf: {profile_name}\n(Usage: #[A-Za-z]*\n)?(\* id = \"[0-9A-Za-z]*\"\n)?\* meta\.profile = \"{url}\")"
-        pattern = f"(InstanceOf: [A-Za-z0-9]*\n(Usage: #[A-Za-z]*\n)?(\* id = \"[0-9A-Za-z_-]*\"\n)?\* meta\.profile = \"{url}\")"
-        content = re.sub(pattern, f"InstanceOf: {profile_name}\n\\2\\3* meta.profile = \"{url}\"", content)
+        # #pattern = f"(InstanceOf: {profile_name}\n(Usage: #[A-Za-z]*\n)?(\* id = \"[0-9A-Za-z]*\"\n)?\* meta\.profile = \"{url}\")"
+        # pattern = f"(InstanceOf: [A-Za-z0-9]*\n(Usage: #[A-Za-z]*\n)?(\* id = \"[0-9A-Za-z_-]*\"\n)?\* meta\.profile = \"{url}\")"
+        # content = re.sub(pattern, f"InstanceOf: {profile_name}\n\\2\\3* meta.profile = \"{url}\"", content)
+        # url2 = url.replace(".","\\.")
+        pattern = re.compile(f"(InstanceOf: \w*)\n(Usage: .+\n(\* meta\..*\n)*?)\* meta\.profile = \"{url}\"", re.RegexFlag.MULTILINE)
+        content = pattern.sub(rf'InstanceOf: {profile_name}\n\2* meta.profile = "{url}"', content)
 
 # Write modified content to output file
 with open(output_file, "w") as f_out:
