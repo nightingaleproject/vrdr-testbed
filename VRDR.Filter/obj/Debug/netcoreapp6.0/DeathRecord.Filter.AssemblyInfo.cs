@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeathRecord.Filter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a245e993250c29fece594958006d7407e7bb21fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeathRecord.Filter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeathRecord.Filter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

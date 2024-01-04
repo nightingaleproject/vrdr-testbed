@@ -14,3 +14,4 @@
 /workspaces/vrdr-testbed/VRDR.Messaging/obj/Debug/netstandard2.0/VRDRMessaging.dll
 /workspaces/vrdr-testbed/VRDR.Messaging/obj/Debug/netstandard2.0/VRDRMessaging.xml
 /workspaces/vrdr-testbed/VRDR.Messaging/obj/Debug/netstandard2.0/VRDRMessaging.pdb
+/workspaces/vrdr-testbed/VRDR.Messaging/obj/Debug/netstandard2.0/VRDRMessaging.sourcelink.json

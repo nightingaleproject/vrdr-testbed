@@ -35,3 +35,4 @@
 /workspaces/vrdr-testbed/VRDR.CLI/obj/Debug/netcoreapp6.0/DeathRecord.CLI.pdb
 /workspaces/vrdr-testbed/VRDR.CLI/obj/Debug/netcoreapp6.0/DeathRecord.CLI.genruntimeconfig.cache
 /workspaces/vrdr-testbed/VRDR.CLI/obj/Debug/netcoreapp6.0/ref/DeathRecord.CLI.dll
+/workspaces/vrdr-testbed/VRDR.CLI/obj/Debug/netcoreapp6.0/DeathRecord.CLI.sourcelink.json

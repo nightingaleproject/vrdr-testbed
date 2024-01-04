@@ -17,3 +17,4 @@
 /workspaces/vrdr-testbed/VRDR.Client/obj/Debug/netcoreapp3.1/VRDRClient.dll
 /workspaces/vrdr-testbed/VRDR.Client/obj/Debug/netcoreapp3.1/VRDRClient.xml
 /workspaces/vrdr-testbed/VRDR.Client/obj/Debug/netcoreapp3.1/VRDRClient.pdb
+/workspaces/vrdr-testbed/VRDR.Client/obj/Debug/netcoreapp3.1/VRDRClient.sourcelink.json

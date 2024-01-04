@@ -17,3 +17,4 @@
 /workspaces/vrdr-testbed/VRDR.Filter/obj/Debug/netcoreapp6.0/refint/DeathRecord.Filter.dll
 /workspaces/vrdr-testbed/VRDR.Filter/obj/Debug/netcoreapp6.0/DeathRecord.Filter.pdb
 /workspaces/vrdr-testbed/VRDR.Filter/obj/Debug/netcoreapp6.0/ref/DeathRecord.Filter.dll
+/workspaces/vrdr-testbed/VRDR.Filter/obj/Debug/netcoreapp6.0/DeathRecord.Filter.sourcelink.json

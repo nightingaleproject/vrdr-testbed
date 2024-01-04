@@ -9,3 +9,4 @@
 /workspaces/vrdr-testbed/VRDR/obj/Debug/netstandard2.0/DeathRecord.csproj.CoreCompileInputs.cache
 /workspaces/vrdr-testbed/VRDR/obj/Debug/netstandard2.0/DeathRecord.dll
 /workspaces/vrdr-testbed/VRDR/obj/Debug/netstandard2.0/DeathRecord.pdb
+/workspaces/vrdr-testbed/VRDR/obj/Debug/netstandard2.0/DeathRecord.sourcelink.json
