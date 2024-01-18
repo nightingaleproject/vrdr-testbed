@@ -12,7 +12,8 @@
 		},
 		"ghcr.io/devcontainers/features/node:1": {},
 		"ghcr.io/devcontainers/features/java:1": {},
-		"ghcr.io/devcontainers/features/ruby:1": {}
+		"ghcr.io/devcontainers/features/ruby:1": {},
+		"git-lfs": "latest"
 	},
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
