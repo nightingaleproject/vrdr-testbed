@@ -1,0 +1,86 @@
+{
+  "ImplementationGuide/fhir.vrdr-testbed" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 0,
+    "source" : "/workspaces/vrdr-testbed/fsh-generated/resources/ImplementationGuide-fhir.vrdr-testbed.json",
+    "sourceTail" : "ImplementationGuide-fhir.vrdr-testbed.json",
+    "path" : "ImplementationGuide-fhir.vrdr-testbed.html",
+    "url" : "http://vrdr-testbed.org/ImplementationGuide/fhir.vrdr-testbed",
+    "version" : "0.1.0",
+    "name" : "vrdrtestbed",
+    "title" : "VRDR Testbed",
+    "date" : "2023-12-29T19:21:14+00:00",
+    "description" : "VRDR Testbed",
+    "status" : {
+      "class" : "colsd",
+      "owner" : "MITRE",
+      "link" : "http://example.org/example-publisher",
+      "status" : "Draft"
+    }
+  },
+  "Bundle/0ff2b28c-7c2b-46e1-8e30-4e0d78c4e816" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 1,
+    "source" : "fsh-generated/resources/Bundle-0ff2b28c-7c2b-46e1-8e30-4e0d78c4e816.json",
+    "sourceTail" : "Bundle-0ff2b28c-7c2b-46e1-8e30-4e0d78c4e816.json",
+    "path" : "Bundle-0ff2b28c-7c2b-46e1-8e30-4e0d78c4e816.html"
+  },
+  "Bundle/263bd161-9878-49df-8a62-aae8339e12ef" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 2,
+    "source" : "fsh-generated/resources/Bundle-263bd161-9878-49df-8a62-aae8339e12ef.json",
+    "sourceTail" : "Bundle-263bd161-9878-49df-8a62-aae8339e12ef.json",
+    "path" : "Bundle-263bd161-9878-49df-8a62-aae8339e12ef.html"
+  },
+  "Bundle/4c0cf7d4-45f3-4615-93ea-ac199c528458" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 3,
+    "source" : "fsh-generated/resources/Bundle-4c0cf7d4-45f3-4615-93ea-ac199c528458.json",
+    "sourceTail" : "Bundle-4c0cf7d4-45f3-4615-93ea-ac199c528458.json",
+    "path" : "Bundle-4c0cf7d4-45f3-4615-93ea-ac199c528458.html"
+  },
+  "Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 4,
+    "source" : "fsh-generated/resources/Bundle-6bbfd6e4-2889-45c4-b1a8-bfbafe598a56.json",
+    "sourceTail" : "Bundle-6bbfd6e4-2889-45c4-b1a8-bfbafe598a56.json",
+    "path" : "Bundle-6bbfd6e4-2889-45c4-b1a8-bfbafe598a56.html"
+  },
+  "Bundle/84a0751d-9287-4c0f-98a0-b7816cfaa470" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 5,
+    "source" : "fsh-generated/resources/Bundle-84a0751d-9287-4c0f-98a0-b7816cfaa470.json",
+    "sourceTail" : "Bundle-84a0751d-9287-4c0f-98a0-b7816cfaa470.json",
+    "path" : "Bundle-84a0751d-9287-4c0f-98a0-b7816cfaa470.html"
+  },
+  "Bundle/d3ef4c72-baca-4cd5-b9c2-4de93ad72770" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 6,
+    "source" : "fsh-generated/resources/Bundle-d3ef4c72-baca-4cd5-b9c2-4de93ad72770.json",
+    "sourceTail" : "Bundle-d3ef4c72-baca-4cd5-b9c2-4de93ad72770.json",
+    "path" : "Bundle-d3ef4c72-baca-4cd5-b9c2-4de93ad72770.html"
+  },
+  "Bundle/f2c98fbf-cc8d-4416-ad85-e240bb32079a" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 7,
+    "source" : "fsh-generated/resources/Bundle-f2c98fbf-cc8d-4416-ad85-e240bb32079a.json",
+    "sourceTail" : "Bundle-f2c98fbf-cc8d-4416-ad85-e240bb32079a.json",
+    "path" : "Bundle-f2c98fbf-cc8d-4416-ad85-e240bb32079a.html"
+  }
+}

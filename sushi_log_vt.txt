@@ -1,0 +1,201 @@
+info  Running SUSHI v3.6.0 (implements FHIR Shorthand specification v3.0.0-ballot)
+info  Arguments:
+info    /workspaces/vrdr-testbed
+info  path-to-fsh-defs defaulted to current working directory
+info  No output path specified. Output to .
+info  Using configuration file: /workspaces/vrdr-testbed/sushi-config.yaml
+info  Importing FSH text...
+info  Preprocessed 1 documents with 15 aliases.
+info  Imported 0 definitions and 123 instances.
+info  Checking /home/vscode/.fhir/packages for hl7.fhir.uv.tools#current...
+info  Found hl7.fhir.uv.tools#current in /home/vscode/.fhir/packages.
+info  Loaded package hl7.fhir.uv.tools#current
+info  Checking /home/vscode/.fhir/packages for hl7.terminology.r4#5.3.0...
+info  Found hl7.terminology.r4#5.3.0 in /home/vscode/.fhir/packages.
+info  Loaded package hl7.terminology.r4#5.3.0
+info  Checking /home/vscode/.fhir/packages for hl7.fhir.uv.extensions.r4#1.0.0...
+info  Found hl7.fhir.uv.extensions.r4#1.0.0 in /home/vscode/.fhir/packages.
+info  Loaded package hl7.fhir.uv.extensions.r4#1.0.0
+info  Checking /home/vscode/.fhir/packages for hl7.fhir.us.vrdr#current...
+info  Found hl7.fhir.us.vrdr#current in /home/vscode/.fhir/packages.
+info  Loaded package hl7.fhir.us.vrdr#current
+info  Checking /home/vscode/.fhir/packages for hl7.fhir.us.core#current...
+info  Found hl7.fhir.us.core#current in /home/vscode/.fhir/packages.
+info  Loaded package hl7.fhir.us.core#current
+info  Checking /home/vscode/.fhir/packages for hl7.fhir.r4.core#4.0.1...
+info  Found hl7.fhir.r4.core#4.0.1 in /home/vscode/.fhir/packages.
+info  Loaded package hl7.fhir.r4.core#4.0.1
+info  Converting FSH to FHIR resources...
+error Element Practitioner.identifier has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 432 - 436
+error Element Practitioner.name has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 432 - 436
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 529
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 530
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 531
+warn  Element Observation.component:odh-UsualIndustry.value[x] has its cardinality satisfied by a rule that does not include the slice name. Use slice names in rule paths when possible.
+error Element Bundle.entry:DeathCertificate.resource.event.detail has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 17 - 61
+error Element Practitioner.identifier has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 746 - 750
+error Element Practitioner.name has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 746 - 750
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 839
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 840
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 841
+warn  Element Observation.component:odh-UsualIndustry.value[x] has its cardinality satisfied by a rule that does not include the slice name. Use slice names in rule paths when possible.
+error Element Bundle.entry:DeathCertificate.resource.event.detail has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 63 - 113
+error Element Practitioner.identifier has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1109 - 1113
+error Element Practitioner.name has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1109 - 1113
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1200
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1201
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1202
+warn  Element Observation.component:odh-UsualIndustry.value[x] has its cardinality satisfied by a rule that does not include the slice name. Use slice names in rule paths when possible.
+error Element Bundle.entry:DeathCertificate.resource.event.detail has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 115 - 159
+error Element Practitioner.identifier has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1401 - 1405
+error Element Practitioner.name has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1401 - 1405
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1492
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1493
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1494
+warn  Element Observation.component:odh-UsualIndustry.value[x] has its cardinality satisfied by a rule that does not include the slice name. Use slice names in rule paths when possible.
+error Element Bundle.entry:DeathCertificate.resource.event.detail has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 161 - 205
+error Element Practitioner.identifier has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1694 - 1698
+error Element Practitioner.name has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1694 - 1698
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1786
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1787
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1788
+warn  Element Observation.component:odh-UsualIndustry.value[x] has its cardinality satisfied by a rule that does not include the slice name. Use slice names in rule paths when possible.
+error Element Bundle.entry:DeathCertificate.resource.event.detail has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 207 - 251
+error Element Practitioner.identifier has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1992 - 1996
+error Element Practitioner.name has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 1992 - 1996
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 2084
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 2085
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 2086
+warn  Element Observation.component:odh-UsualIndustry.value[x] has its cardinality satisfied by a rule that does not include the slice name. Use slice names in rule paths when possible.
+error Element Bundle.entry:DeathCertificate.resource.event.detail has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 253 - 297
+error Element Practitioner.identifier has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 2301 - 2305
+error Element Practitioner.name has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 2301 - 2305
+error Cannot assign string value: 2023-12-12T06:59:00. Value does not match element type: dateTime
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 2340
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 2401
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 2402
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 2403
+warn  Element Observation.component:odh-UsualIndustry.value[x] has its cardinality satisfied by a rule that does not include the slice name. Use slice names in rule paths when possible.
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 2428
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 2429
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 2430
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 2431
+warn  Element Observation.component:birthJurisdiction.value[x] has its cardinality satisfied by a rule that does not include the slice name. Use slice names in rule paths when possible.
+warn  Element Observation.component:birthYear.value[x] has its cardinality satisfied by a rule that does not include the slice name. Use slice names in rule paths when possible.
+error Element Bundle.entry:DeathCertificate.resource.event.detail has minimum cardinality 1 but occurs 0 time(s).
+  File: /workspaces/vrdr-testbed/input/fsh/vt.fsh
+  Line: 299 - 345
+info  Converted 123 FHIR instances.
+info  Exporting FHIR resources as JSON...
+info  Exported 7 FHIR resources as JSON.
+info  Assembling Implementation Guide sources...
+info  Generated ImplementationGuide-fhir.vrdr-testbed.json
+info  Assembled Implementation Guide sources; ready for IG Publisher.
+
+========================= SUSHI RESULTS ===========================
+|  -------------------------------------------------------------  |
+| |    Profiles   |  Extensions  |   Logicals   |   Resources   | |
+| |-------------------------------------------------------------| |
+| |       0       |      0       |      0       |       0       | |
+|  -------------------------------------------------------------  |
+|  -------------------------------------------------------------  |
+| |      ValueSets     |    CodeSystems    |     Instances      | |
+| |-------------------------------------------------------------| |
+| |         0          |         0         |        123         | |
+|  -------------------------------------------------------------  |
+|                                                                 |
+===================================================================
+| Don't carp about your mistakes.        22 Errors    34 Warnings |
+===================================================================
+

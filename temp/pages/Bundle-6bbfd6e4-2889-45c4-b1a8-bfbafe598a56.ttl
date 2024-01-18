@@ -1,0 +1,1097 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://vrdr-testbed.org/Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "6bbfd6e4-2889-45c4-b1a8-bfbafe598a56"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-12-28T15:14:45.1181823+00:00"^^xsd:dateTime ] ;
+     fhir:source [ fhir:v "EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56"^^xsd:anyURI ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/CertificateNumber"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "240011" ]
+     ] ) ;
+     fhir:system [ fhir:v "http://nchs.cdc.gov/vrdr_id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023VT240011" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2023-12-28T10:14:45.0734476-05:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:706f7ca4-06e3-452d-9e84-711449c5db8b"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:706f7ca4-06e3-452d-9e84-711449c5db8b> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:04bf1947-9283-4995-ac7a-b1966f237c82"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:04bf1947-9283-4995-ac7a-b1966f237c82> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:df9f66d4-ade9-459c-8475-264d5f15f938"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:df9f66d4-ade9-459c-8475-264d5f15f938> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:8a36d455-1f2a-4581-9189-cd7d87d6cbfd"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:8a36d455-1f2a-4581-9189-cd7d87d6cbfd> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:62d30012-05d0-4171-b2b5-99856bac5e3f"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:62d30012-05d0-4171-b2b5-99856bac5e3f> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:3f69c911-567c-4a31-b5a0-f2203bbe7530"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:3f69c911-567c-4a31-b5a0-f2203bbe7530> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:af2d32db-f4f4-4112-ab9e-d2daf83d3ee8"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:af2d32db-f4f4-4112-ab9e-d2daf83d3ee8> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:43482c46-d7fa-4e93-8515-e07eaef6e819"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:43482c46-d7fa-4e93-8515-e07eaef6e819> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:a0aa69b6-ac11-4368-8181-86bfcea064c8"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:a0aa69b6-ac11-4368-8181-86bfcea064c8> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:7286cfaf-874c-48f4-aea6-d2ceaa1ebe1e"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:7286cfaf-874c-48f4-aea6-d2ceaa1ebe1e> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:8d4b0b3c-0977-4546-a541-a5b151c0881f"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:8d4b0b3c-0977-4546-a541-a5b151c0881f> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:e7508069-f315-42ee-ac14-95a36c20fe4b"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:e7508069-f315-42ee-ac14-95a36c20fe4b> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:206cfaf1-e3a9-4350-b12a-27a613f6cee2"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:206cfaf1-e3a9-4350-b12a-27a613f6cee2> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:a4424528-207c-4c0f-807a-7751c62a7145"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:a4424528-207c-4c0f-807a-7751c62a7145> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:f265ec14-47ad-44dd-aae8-67f44dc83e5c"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:f265ec14-47ad-44dd-aae8-67f44dc83e5c> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:e07e4e7f-09bd-44ed-9f3e-880a1d8d58bc"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:e07e4e7f-09bd-44ed-9f3e-880a1d8d58bc> )
+  ] ) . # 
+
+<urn:uuid:706f7ca4-06e3-452d-9e84-711449c5db8b> a fhir:Composition ;
+  fhir:id [ fhir:v "706f7ca4-06e3-452d-9e84-711449c5db8b"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-12-28T15:14:45.1146906+00:00"^^xsd:dateTime ] ;
+     fhir:source [ fhir:v "EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56"^^xsd:anyURI ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"706f7ca4-06e3-452d-9e84-711449c5db8b\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;706f7ca4-06e3-452d-9e84-711449c5db8b&quot; Version &quot;1&quot; Updated &quot;2023-12-28 15:14:45+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-death-certificate.html\">Death Certificate</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Death certificate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#64297-5)</span></p><p><b>date</b>: 2023-12-28 15:14:45+0000</p><p><b>author</b>: <a href=\"#Practitioner_df9f66d4-ade9-459c-8475-264d5f15f938\">See above (urn:uuid:df9f66d4-ade9-459c-8475-264d5f15f938)</a></p><p><b>title</b>: Death Certificate</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>legal</td><td><a href=\"#Practitioner_df9f66d4-ade9-459c-8475-264d5f15f938\">See above (urn:uuid:df9f66d4-ade9-459c-8475-264d5f15f938)</a></td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td>Diagnostic procedure (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#103693007)</span></td><td><a href=\"#Procedure_8a36d455-1f2a-4581-9189-cd7d87d6cbfd\">See above (urn:uuid:8a36d455-1f2a-4581-9189-cd7d87d6cbfd)</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:64297-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "64297-5" ] ;
+       fhir:display [ fhir:v "Death certificate" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://vrdr-testbed.org/Patient/04bf1947-9283-4995-ac7a-b1966f237c82> ;
+     fhir:reference [ fhir:v "Patient/04bf1947-9283-4995-ac7a-b1966f237c82" ]
+  ] ; # 
+  fhir:date [ fhir:v "2023-12-28T15:14:45+00:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:reference [ fhir:v "urn:uuid:df9f66d4-ade9-459c-8475-264d5f15f938" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Death Certificate"] ; # 
+  fhir:attester ( [
+     fhir:mode [ fhir:v "legal" ] ;
+     fhir:party [
+       fhir:reference [ fhir:v "urn:uuid:df9f66d4-ade9-459c-8475-264d5f15f938" ]
+     ]
+  ] ) ; # 
+  fhir:event ( [
+     fhir:code ( [
+       fhir:coding ( [
+         a sct:103693007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "103693007" ] ;
+         fhir:display [ fhir:v "Diagnostic procedure (procedure)" ]
+       ] )
+     ] ) ;
+     fhir:detail ( [
+       fhir:reference [ fhir:v "urn:uuid:8a36d455-1f2a-4581-9189-cd7d87d6cbfd" ]
+     ] )
+  ] ) ; # 
+  fhir:section ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DecedentDemographics" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:reference [ fhir:v "urn:uuid:04bf1947-9283-4995-ac7a-b1966f237c82" ]
+     ] [
+       fhir:reference [ fhir:v "urn:uuid:af2d32db-f4f4-4112-ab9e-d2daf83d3ee8" ]
+     ] [
+       fhir:reference [ fhir:v "urn:uuid:43482c46-d7fa-4e93-8515-e07eaef6e819" ]
+     ] [
+       fhir:reference [ fhir:v "urn:uuid:a0aa69b6-ac11-4368-8181-86bfcea064c8" ]
+     ] [
+       fhir:reference [ fhir:v "urn:uuid:1f59295d-24ff-416a-86e1-02db7cca1ef3" ]
+     ] [
+       fhir:reference [ fhir:v "urn:uuid:e7508069-f315-42ee-ac14-95a36c20fe4b" ]
+     ] [
+       fhir:reference [ fhir:v "urn:uuid:e07e4e7f-09bd-44ed-9f3e-880a1d8d58bc" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DeathCertification" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:reference [ fhir:v "urn:uuid:df9f66d4-ade9-459c-8475-264d5f15f938" ]
+     ] [
+       fhir:reference [ fhir:v "urn:uuid:8a36d455-1f2a-4581-9189-cd7d87d6cbfd" ]
+     ] [
+       fhir:reference [ fhir:v "urn:uuid:f265ec14-47ad-44dd-aae8-67f44dc83e5c" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DeathInvestigation" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:reference [ fhir:v "urn:uuid:62d30012-05d0-4171-b2b5-99856bac5e3f" ]
+     ] [
+       fhir:reference [ fhir:v "urn:uuid:3f69c911-567c-4a31-b5a0-f2203bbe7530" ]
+     ] [
+       fhir:reference [ fhir:v "urn:uuid:8d4b0b3c-0977-4546-a541-a5b151c0881f" ]
+     ] [
+       fhir:reference [ fhir:v "urn:uuid:206cfaf1-e3a9-4350-b12a-27a613f6cee2" ]
+     ] [
+       fhir:reference [ fhir:v "urn:uuid:a4424528-207c-4c0f-807a-7751c62a7145" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DecedentDisposition" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:reference [ fhir:v "urn:uuid:7286cfaf-874c-48f4-aea6-d2ceaa1ebe1e" ]
+     ] )
+  ] ) . # 
+
+<urn:uuid:04bf1947-9283-4995-ac7a-b1966f237c82> a fhir:Patient ;
+  fhir:id [ fhir:v "04bf1947-9283-4995-ac7a-b1966f237c82"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-12-28T15:14:45.1147461+00:00"^^xsd:dateTime ] ;
+     fhir:source [ fhir:v "EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56"^^xsd:anyURI ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"04bf1947-9283-4995-ac7a-b1966f237c82\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;04bf1947-9283-4995-ac7a-b1966f237c82&quot; Version &quot;1&quot; Updated &quot;2023-12-28 15:14:45+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-decedent.html\">Decedent</a></p></div><p><b>NVSS SexAtDeath</b>: Female <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html\">AdministrativeGender</a>#female)</span></p><p><b>Birth Place</b>: VT US </p><p><b>identifier</b>: Social Beneficiary Identifier: <a href=\"http://terminology.hl7.org/3.1.0/NamingSystem-ssn.html\">#</a>531869507</p><p><b>name</b>: Twila Roxanne Hilty (OFFICIAL)</p><p><b>gender</b>: unknown</p><p><b>birthDate</b>: ??</p><p><b>address</b>: 4437 North Charles Avenue Southeast Apt 2B Hartford (Town of) VT US </p><p><b>maritalStatus</b>: Never Married <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html\">MaritalStatus</a>#S)</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/NVSS-SexAtDeath"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/administrative-gender"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "female" ] ;
+         fhir:display [ fhir:v "Female" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Address ;
+       fhir:state [
+         fhir:v "VT" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Location-Jurisdiction-Id"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "VT" ]
+         ] )
+       ] ;
+       fhir:country [ fhir:v "US" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SB" ] ;
+         fhir:display [ fhir:v "Social Beneficiary Identifier" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-ssn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "531869507" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Hilty" ] ;
+     fhir:given ( [ fhir:v "Twila" ] [ fhir:v "Roxanne" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "unknown"] ; # 
+  fhir:birthDate [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2002"^^xsd:nonNegativeInteger ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1"^^xsd:nonNegativeInteger ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1"^^xsd:nonNegativeInteger ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDate"^^xsd:anyURI ]
+     ] )
+  ] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/WithinCityLimitsIndicator"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "UNK" ] ;
+         fhir:display [ fhir:v "unknown" ]
+       ]
+     ] ) ;
+     fhir:line ( [ fhir:v "4437 North Charles Avenue Southeast Apt 2B" ] ) ;
+     fhir:city [
+       fhir:v "Hartford (Town of)" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/CityCode"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "32275"^^xsd:positiveInteger ]
+       ] )
+     ] ;
+     fhir:district [
+       fhir:v "Windsor" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/DistrictCode"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "50027"^^xsd:positiveInteger ]
+       ] )
+     ] ;
+     fhir:state [ fhir:v "VT" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ) ; # 
+  fhir:maritalStatus [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "0" ] ;
+           fhir:display [ fhir:v "Edit Passed" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "S" ] ;
+       fhir:display [ fhir:v "Never Married" ]
+     ] )
+  ] . # 
+
+<urn:uuid:df9f66d4-ade9-459c-8475-264d5f15f938> a fhir:Practitioner ;
+  fhir:id [ fhir:v "df9f66d4-ade9-459c-8475-264d5f15f938"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-certifier"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-certifier>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"df9f66d4-ade9-459c-8475-264d5f15f938\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;df9f66d4-ade9-459c-8475-264d5f15f938&quot; Version &quot;1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-certifier.html\">Certifier</a></p></div></div>"
+  ] . # 
+
+<urn:uuid:8a36d455-1f2a-4581-9189-cd7d87d6cbfd> a fhir:Procedure ;
+  fhir:id [ fhir:v "8a36d455-1f2a-4581-9189-cd7d87d6cbfd"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certification"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certification>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"8a36d455-1f2a-4581-9189-cd7d87d6cbfd\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;8a36d455-1f2a-4581-9189-cd7d87d6cbfd&quot; Version &quot;1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-death-certification.html\">Death Certification Procedure</a></p></div><p><b>status</b>: completed</p><p><b>category</b>: Diagnostic procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#103693007)</span></p><p><b>code</b>: Death certification <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#308646001)</span></p><p><b>subject</b>: <a href=\"#Patient_04bf1947-9283-4995-ac7a-b1966f237c82\">See above (Patient/04bf1947-9283-4995-ac7a-b1966f237c82)</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       a sct:103693007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "103693007" ] ;
+       fhir:display [ fhir:v "Diagnostic procedure" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:308646001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "308646001" ] ;
+       fhir:display [ fhir:v "Death certification" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://vrdr-testbed.org/Patient/04bf1947-9283-4995-ac7a-b1966f237c82> ;
+     fhir:reference [ fhir:v "Patient/04bf1947-9283-4995-ac7a-b1966f237c82" ]
+  ] . # 
+
+<urn:uuid:62d30012-05d0-4171-b2b5-99856bac5e3f> a fhir:Observation ;
+  fhir:id [ fhir:v "62d30012-05d0-4171-b2b5-99856bac5e3f"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-12-28T15:14:45.1180378+00:00"^^xsd:dateTime ] ;
+     fhir:source [ fhir:v "EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56"^^xsd:anyURI ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-date"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-date>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"62d30012-05d0-4171-b2b5-99856bac5e3f\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;62d30012-05d0-4171-b2b5-99856bac5e3f&quot; Version &quot;1&quot; Updated &quot;2023-12-28 15:14:45+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-death-date.html\">Death Date</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Date+time of death <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#81956-5)</span></p><p><b>subject</b>: <a href=\"#Patient_04bf1947-9283-4995-ac7a-b1966f237c82\">See above (Patient/04bf1947-9283-4995-ac7a-b1966f237c82)</a></p><p><b>value</b>: ??</p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Location of death <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#58332-8)</span></td><td>Death in hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#16983000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:81956-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "81956-5" ] ;
+       fhir:display [ fhir:v "Date+time of death" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://vrdr-testbed.org/Patient/04bf1947-9283-4995-ac7a-b1966f237c82> ;
+     fhir:reference [ fhir:v "Patient/04bf1947-9283-4995-ac7a-b1966f237c82" ]
+  ] ; # 
+  fhir:value [
+     a fhir:dateTime ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2023"^^xsd:nonNegativeInteger ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1"^^xsd:nonNegativeInteger ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "10"^^xsd:nonNegativeInteger ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Time"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "10:00:00"^^xsd:time ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime"^^xsd:anyURI ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:58332-8 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "58332-8" ] ;
+         fhir:display [ fhir:v "Location of death" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:16983000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "16983000" ] ;
+         fhir:display [ fhir:v "Death in hospital" ]
+       ] )
+     ]
+  ] ) . # 
+
+<urn:uuid:3f69c911-567c-4a31-b5a0-f2203bbe7530> a fhir:Location ;
+  fhir:id [ fhir:v "3f69c911-567c-4a31-b5a0-f2203bbe7530"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-12-28T15:14:45.1180471+00:00"^^xsd:dateTime ] ;
+     fhir:source [ fhir:v "EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56"^^xsd:anyURI ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-location"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-location>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"3f69c911-567c-4a31-b5a0-f2203bbe7530\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;3f69c911-567c-4a31-b5a0-f2203bbe7530&quot; Version &quot;1&quot; Updated &quot;2023-12-28 15:14:45+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-death-location.html\">Death Location</a></p></div><p><b>name</b>: BLANK</p><p><b>type</b>: death location <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-location-type-cs.html\">Location Type Code System</a>#death)</span></p><p><b>address</b>: VT US </p></div>"
+  ] ; # 
+  fhir:name [ fhir:v "BLANK"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-location-type-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "death" ] ;
+       fhir:display [ fhir:v "death location" ]
+     ] )
+  ] ) ; # 
+  fhir:address [
+     fhir:state [
+       fhir:v "VT" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/Location-Jurisdiction-Id"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "VT" ]
+       ] )
+     ] ;
+     fhir:country [ fhir:v "US" ]
+  ] . # 
+
+<urn:uuid:af2d32db-f4f4-4112-ab9e-d2daf83d3ee8> a fhir:Observation ;
+  fhir:id [ fhir:v "af2d32db-f4f4-4112-ab9e-d2daf83d3ee8"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-12-28T15:14:45.1180504+00:00"^^xsd:dateTime ] ;
+     fhir:source [ fhir:v "EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56"^^xsd:anyURI ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-age"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-age>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"af2d32db-f4f4-4112-ab9e-d2daf83d3ee8\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;af2d32db-f4f4-4112-ab9e-d2daf83d3ee8&quot; Version &quot;1&quot; Updated &quot;2023-12-28 15:14:45+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-decedent-age.html\">Decedent Age</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Age at death <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#39016-1)</span></p><p><b>subject</b>: <a href=\"#Patient_04bf1947-9283-4995-ac7a-b1966f237c82\">See above (Patient/04bf1947-9283-4995-ac7a-b1966f237c82)</a></p><p><b>value</b>: 21 Years<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:39016-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "39016-1" ] ;
+       fhir:display [ fhir:v "Age at death" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://vrdr-testbed.org/Patient/04bf1947-9283-4995-ac7a-b1966f237c82> ;
+     fhir:reference [ fhir:v "Patient/04bf1947-9283-4995-ac7a-b1966f237c82" ]
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "0" ] ;
+           fhir:display [ fhir:v "Edit Passed" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:value [ fhir:v "21"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Years" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "a" ]
+  ] . # 
+
+<urn:uuid:43482c46-d7fa-4e93-8515-e07eaef6e819> a fhir:Observation ;
+  fhir:id [ fhir:v "43482c46-d7fa-4e93-8515-e07eaef6e819"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-12-28T15:14:45.118054+00:00"^^xsd:dateTime ] ;
+     fhir:source [ fhir:v "EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56"^^xsd:anyURI ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-education-level"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-education-level>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"43482c46-d7fa-4e93-8515-e07eaef6e819\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;43482c46-d7fa-4e93-8515-e07eaef6e819&quot; Version &quot;1&quot; Updated &quot;2023-12-28 15:14:45+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-decedent-education-level.html\">Decedent Education Level</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Highest level of education [US Standard Certificate of Death] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#80913-7)</span></p><p><b>subject</b>: <a href=\"#Patient_04bf1947-9283-4995-ac7a-b1966f237c82\">See above (Patient/04bf1947-9283-4995-ac7a-b1966f237c82)</a></p><p><b>value</b>: Doctoral or post graduate education <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-EducationLevel.html\">Education Level</a>#POSTG)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:80913-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "80913-7" ] ;
+       fhir:display [ fhir:v "Highest level of education [US Standard Certificate of Death]" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://vrdr-testbed.org/Patient/04bf1947-9283-4995-ac7a-b1966f237c82> ;
+     fhir:reference [ fhir:v "Patient/04bf1947-9283-4995-ac7a-b1966f237c82" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "0" ] ;
+           fhir:display [ fhir:v "Edit Passed" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-EducationLevel"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "POSTG" ] ;
+       fhir:display [ fhir:v "Doctoral or post graduate education" ]
+     ] )
+  ] . # 
+
+<urn:uuid:a0aa69b6-ac11-4368-8181-86bfcea064c8> a fhir:Observation ;
+  fhir:id [ fhir:v "a0aa69b6-ac11-4368-8181-86bfcea064c8"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-usual-work"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-usual-work>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"a0aa69b6-ac11-4368-8181-86bfcea064c8\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;a0aa69b6-ac11-4368-8181-86bfcea064c8&quot; Version &quot;1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-decedent-usual-work.html\">Decedent Usual Work</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: History of Usual occupation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21843-8)</span></p><p><b>subject</b>: <a href=\"#Patient_04bf1947-9283-4995-ac7a-b1966f237c82\">See above (Patient/04bf1947-9283-4995-ac7a-b1966f237c82)</a></p><p><b>value</b>: Teacher <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html\">NullFlavor</a>#UNK &quot;unknown&quot;)</span></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>History of Usual industry <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21844-6)</span></td><td>Education <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html\">NullFlavor</a>#UNK &quot;unknown&quot;)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:21843-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "21843-8" ] ;
+       fhir:display [ fhir:v "History of Usual occupation" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://vrdr-testbed.org/Patient/04bf1947-9283-4995-ac7a-b1966f237c82> ;
+     fhir:reference [ fhir:v "Patient/04bf1947-9283-4995-ac7a-b1966f237c82" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "UNK" ] ;
+       fhir:display [ fhir:v "unknown" ]
+     ] ) ;
+     fhir:text [ fhir:v "Teacher" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:21844-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "21844-6" ] ;
+         fhir:display [ fhir:v "History of Usual industry" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "UNK" ] ;
+         fhir:display [ fhir:v "unknown" ]
+       ] ) ;
+       fhir:text [ fhir:v "Education" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:7286cfaf-874c-48f4-aea6-d2ceaa1ebe1e> a fhir:Observation ;
+  fhir:id [ fhir:v "7286cfaf-874c-48f4-aea6-d2ceaa1ebe1e"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-12-28T15:14:45.1180715+00:00"^^xsd:dateTime ] ;
+     fhir:source [ fhir:v "EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56"^^xsd:anyURI ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-disposition-method"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-disposition-method>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"7286cfaf-874c-48f4-aea6-d2ceaa1ebe1e\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;7286cfaf-874c-48f4-aea6-d2ceaa1ebe1e&quot; Version &quot;1&quot; Updated &quot;2023-12-28 15:14:45+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-decedent-disposition-method.html\">Decedent Disposition Method</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Body disposition method <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#80905-3)</span></p><p><b>subject</b>: <a href=\"#Patient_04bf1947-9283-4995-ac7a-b1966f237c82\">See above (Patient/04bf1947-9283-4995-ac7a-b1966f237c82)</a></p><p><b>value</b>: Burial <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#449971000124106)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:80905-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "80905-3" ] ;
+       fhir:display [ fhir:v "Body disposition method" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://vrdr-testbed.org/Patient/04bf1947-9283-4995-ac7a-b1966f237c82> ;
+     fhir:reference [ fhir:v "Patient/04bf1947-9283-4995-ac7a-b1966f237c82" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:449971000124106 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "449971000124106" ] ;
+       fhir:display [ fhir:v "Burial" ]
+     ] )
+  ] . # 
+
+<urn:uuid:8d4b0b3c-0977-4546-a541-a5b151c0881f> a fhir:Observation ;
+  fhir:id [ fhir:v "8d4b0b3c-0977-4546-a541-a5b151c0881f"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-pregnancy-status"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-pregnancy-status>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"8d4b0b3c-0977-4546-a541-a5b151c0881f\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;8d4b0b3c-0977-4546-a541-a5b151c0881f&quot; Version &quot;1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-decedent-pregnancy-status.html\">Decedent Pregnancy Status</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Timing of recent pregnancy in relation to death <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69442-2)</span></p><p><b>subject</b>: <a href=\"#Patient_04bf1947-9283-4995-ac7a-b1966f237c82\">See above (Patient/04bf1947-9283-4995-ac7a-b1966f237c82)</a></p><p><b>value</b>:  <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:69442-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "69442-2" ] ;
+       fhir:display [ fhir:v "Timing of recent pregnancy in relation to death" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://vrdr-testbed.org/Patient/04bf1947-9283-4995-ac7a-b1966f237c82> ;
+     fhir:reference [ fhir:v "Patient/04bf1947-9283-4995-ac7a-b1966f237c82" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "0" ] ;
+           fhir:display [ fhir:v "Edit Passed" ]
+         ] )
+       ]
+     ] )
+  ] . # 
+
+<urn:uuid:e7508069-f315-42ee-ac14-95a36c20fe4b> a fhir:RelatedPerson ;
+  fhir:id [ fhir:v "e7508069-f315-42ee-ac14-95a36c20fe4b"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-12-28T15:14:45.1181203+00:00"^^xsd:dateTime ] ;
+     fhir:source [ fhir:v "EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56"^^xsd:anyURI ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-father"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-father>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"e7508069-f315-42ee-ac14-95a36c20fe4b\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;e7508069-f315-42ee-ac14-95a36c20fe4b&quot; Version &quot;1&quot; Updated &quot;2023-12-28 15:14:45+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-decedent-father.html\">Decedent Father</a></p></div><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_04bf1947-9283-4995-ac7a-b1966f237c82\">See above (Patient/04bf1947-9283-4995-ac7a-b1966f237c82)</a></p><p><b>relationship</b>: Father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH &quot;father&quot;)</span></p><p><b>name</b>: Decedent Dad(OFFICIAL)</p></div>"
+  ] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:patient [
+     fhir:link <http://vrdr-testbed.org/Patient/04bf1947-9283-4995-ac7a-b1966f237c82> ;
+     fhir:reference [ fhir:v "Patient/04bf1947-9283-4995-ac7a-b1966f237c82" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FTH" ] ;
+       fhir:display [ fhir:v "father" ]
+     ] ) ;
+     fhir:text [ fhir:v "Father" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "Decedent Dad" ] ;
+     fhir:family [ fhir:v "Brown" ]
+  ] ) . # 
+
+<urn:uuid:206cfaf1-e3a9-4350-b12a-27a613f6cee2> a fhir:Observation ;
+  fhir:id [ fhir:v "206cfaf1-e3a9-4350-b12a-27a613f6cee2"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-12-28T15:14:45.1181328+00:00"^^xsd:dateTime ] ;
+     fhir:source [ fhir:v "EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56"^^xsd:anyURI ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-autopsy-performed-indicator"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-autopsy-performed-indicator>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"206cfaf1-e3a9-4350-b12a-27a613f6cee2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;206cfaf1-e3a9-4350-b12a-27a613f6cee2&quot; Version &quot;1&quot; Updated &quot;2023-12-28 15:14:45+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-autopsy-performed-indicator.html\">Autopsy Performed Indicator</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Autopsy was performed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85699-7)</span></p><p><b>subject</b>: <a href=\"#Patient_04bf1947-9283-4995-ac7a-b1966f237c82\">See above (Patient/04bf1947-9283-4995-ac7a-b1966f237c82)</a></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#N)</span></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Autopsy results available <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69436-4)</span></td><td>not applicable <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html\">NullFlavor</a>#NA)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85699-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85699-7" ] ;
+       fhir:display [ fhir:v "Autopsy was performed" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://vrdr-testbed.org/Patient/04bf1947-9283-4995-ac7a-b1966f237c82> ;
+     fhir:reference [ fhir:v "Patient/04bf1947-9283-4995-ac7a-b1966f237c82" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "N" ] ;
+       fhir:display [ fhir:v "No" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:69436-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "69436-4" ] ;
+         fhir:display [ fhir:v "Autopsy results available" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NA" ] ;
+         fhir:display [ fhir:v "not applicable" ]
+       ] )
+     ]
+  ] ) . # 
+
+<urn:uuid:a4424528-207c-4c0f-807a-7751c62a7145> a fhir:Observation ;
+  fhir:id [ fhir:v "a4424528-207c-4c0f-807a-7751c62a7145"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-tobacco-use-contributed-to-death"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-tobacco-use-contributed-to-death>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"a4424528-207c-4c0f-807a-7751c62a7145\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;a4424528-207c-4c0f-807a-7751c62a7145&quot; Version &quot;1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-tobacco-use-contributed-to-death.html\">Tobacco Use Contributed To Death</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Did tobacco use contribute to death <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69443-0)</span></p><p><b>subject</b>: <a href=\"#Patient_04bf1947-9283-4995-ac7a-b1966f237c82\">See above (Patient/04bf1947-9283-4995-ac7a-b1966f237c82)</a></p><p><b>value</b>: Unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html\">NullFlavor</a>#UNK)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:69443-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "69443-0" ] ;
+       fhir:display [ fhir:v "Did tobacco use contribute to death" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://vrdr-testbed.org/Patient/04bf1947-9283-4995-ac7a-b1966f237c82> ;
+     fhir:reference [ fhir:v "Patient/04bf1947-9283-4995-ac7a-b1966f237c82" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "UNK" ] ;
+       fhir:display [ fhir:v "Unknown" ]
+     ] )
+  ] . # 
+
+<urn:uuid:f265ec14-47ad-44dd-aae8-67f44dc83e5c> a fhir:Observation ;
+  fhir:id [ fhir:v "f265ec14-47ad-44dd-aae8-67f44dc83e5c"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-12-28T15:14:45.1181568+00:00"^^xsd:dateTime ] ;
+     fhir:source [ fhir:v "EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56"^^xsd:anyURI ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-manner-of-death"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-manner-of-death>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"f265ec14-47ad-44dd-aae8-67f44dc83e5c\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;f265ec14-47ad-44dd-aae8-67f44dc83e5c&quot; Version &quot;1&quot; Updated &quot;2023-12-28 15:14:45+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-manner-of-death.html\">Manner of Death</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Manner of death <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69449-7)</span></p><p><b>subject</b>: <a href=\"#Patient_04bf1947-9283-4995-ac7a-b1966f237c82\">See above (Patient/04bf1947-9283-4995-ac7a-b1966f237c82)</a></p><p><b>performer</b>: <a href=\"#Practitioner_df9f66d4-ade9-459c-8475-264d5f15f938\">See above (urn:uuid:df9f66d4-ade9-459c-8475-264d5f15f938)</a></p><p><b>value</b>: Natural death <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#38605008)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:69449-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "69449-7" ] ;
+       fhir:display [ fhir:v "Manner of death" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://vrdr-testbed.org/Patient/04bf1947-9283-4995-ac7a-b1966f237c82> ;
+     fhir:reference [ fhir:v "Patient/04bf1947-9283-4995-ac7a-b1966f237c82" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:reference [ fhir:v "urn:uuid:df9f66d4-ade9-459c-8475-264d5f15f938" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:38605008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "38605008" ] ;
+       fhir:display [ fhir:v "Natural death" ]
+     ] )
+  ] . # 
+
+<urn:uuid:e07e4e7f-09bd-44ed-9f3e-880a1d8d58bc> a fhir:Observation ;
+  fhir:id [ fhir:v "e07e4e7f-09bd-44ed-9f3e-880a1d8d58bc"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-12-28T15:14:45.1181686+00:00"^^xsd:dateTime ] ;
+     fhir:source [ fhir:v "EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56"^^xsd:anyURI ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-input-race-and-ethnicity"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-input-race-and-ethnicity>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"e07e4e7f-09bd-44ed-9f3e-880a1d8d58bc\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;e07e4e7f-09bd-44ed-9f3e-880a1d8d58bc&quot; Version &quot;1&quot; Updated &quot;2023-12-28 15:14:45+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: EDRS-IJE:Bundle/6bbfd6e4-2889-45c4-b1a8-bfbafe598a56!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vrdr//StructureDefinition-vrdr-input-race-and-ethnicity.html\">Input Race and Ethnicity</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Input Race and Ethnicity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-observations-cs.html\">Local Observation Codes</a>#inputraceandethnicity)</span></p><p><b>subject</b>: <a href=\"#Patient_04bf1947-9283-4995-ac7a-b1966f237c82\">See above (Patient/04bf1947-9283-4995-ac7a-b1966f237c82)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Black Or African American <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#BlackOrAfricanAmerican)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: American Indian Or Alaskan Native <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#AmericanIndianOrAlaskanNative)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Asian Indian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#AsianIndian)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Chinese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#Chinese)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Filipino <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#Filipino)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Japanese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#Japanese)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Korean <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#Korean)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Vietnamese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#Vietnamese)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Other Asian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#OtherAsian)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Native Hawaiian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#NativeHawaiian)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Guamanian Or Chamorro <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#GuamanianOrChamorro)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Samoan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#Samoan)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Other Pacific Islander <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#OtherPacificIslander)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Other Race <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#OtherRace)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: White <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#White)</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Mexican <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#HispanicMexican)</span></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#N)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Puerto Rican <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#HispanicPuertoRican)</span></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#N)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Cuban <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#HispanicCuban)</span></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#N)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Other <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vrdr//CodeSystem-vrdr-component-cs.html\">Local Component Codes</a>#HispanicOther)</span></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#N)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-observations-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "inputraceandethnicity" ] ;
+       fhir:display [ fhir:v "Input Race and Ethnicity" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://vrdr-testbed.org/Patient/04bf1947-9283-4995-ac7a-b1966f237c82> ;
+     fhir:reference [ fhir:v "Patient/04bf1947-9283-4995-ac7a-b1966f237c82" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "BlackOrAfricanAmerican" ] ;
+         fhir:display [ fhir:v "Black Or African American" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AmericanIndianOrAlaskanNative" ] ;
+         fhir:display [ fhir:v "American Indian Or Alaskan Native" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AsianIndian" ] ;
+         fhir:display [ fhir:v "Asian Indian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Chinese" ] ;
+         fhir:display [ fhir:v "Chinese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Filipino" ] ;
+         fhir:display [ fhir:v "Filipino" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Japanese" ] ;
+         fhir:display [ fhir:v "Japanese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Korean" ] ;
+         fhir:display [ fhir:v "Korean" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Vietnamese" ] ;
+         fhir:display [ fhir:v "Vietnamese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherAsian" ] ;
+         fhir:display [ fhir:v "Other Asian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NativeHawaiian" ] ;
+         fhir:display [ fhir:v "Native Hawaiian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "GuamanianOrChamorro" ] ;
+         fhir:display [ fhir:v "Guamanian Or Chamorro" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Samoan" ] ;
+         fhir:display [ fhir:v "Samoan" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherPacificIslander" ] ;
+         fhir:display [ fhir:v "Other Pacific Islander" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherRace" ] ;
+         fhir:display [ fhir:v "Other Race" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "White" ] ;
+         fhir:display [ fhir:v "White" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicMexican" ] ;
+         fhir:display [ fhir:v "Hispanic Mexican" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "No" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicPuertoRican" ] ;
+         fhir:display [ fhir:v "Hispanic Puerto Rican" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "No" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicCuban" ] ;
+         fhir:display [ fhir:v "Hispanic Cuban" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "No" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicOther" ] ;
+         fhir:display [ fhir:v "Hispanic Other" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "No" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

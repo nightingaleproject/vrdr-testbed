@@ -1,0 +1,60 @@
+{
+  "package": "fhir.vrdr-testbed",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [],
+  "profiles": {},
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag": [
+      "Bundle.entry.resource.maritalStatus",
+      "Bundle.entry.resource.valueCodeableConcept",
+      "Bundle.entry.resource.valueQuantity"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/CertificateNumber": [
+      "Bundle.identifier"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/CityCode": [
+      "Bundle.entry.resource.address.city"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/DistrictCode": [
+      "Bundle.entry.resource.address.district"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/Location-Jurisdiction-Id": [
+      "Bundle.entry.resource.address.state"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/NVSS-SexAtDeath": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDate": [
+      "Bundle.entry.resource.birthDate"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime": [
+      "Bundle.entry.resource.valueDateTime"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/SpouseAlive": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/us/vrdr/StructureDefinition/WithinCityLimitsIndicator": [
+      "Bundle.entry.resource.address"
+    ]
+  }
+}

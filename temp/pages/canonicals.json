@@ -1,0 +1,9 @@
+[
+  {
+    "id" : "fhir.vrdr-testbed",
+    "type" : "ImplementationGuide",
+    "url" : "http://vrdr-testbed.org/ImplementationGuide/fhir.vrdr-testbed",
+    "version" : "0.1.0",
+    "name" : "vrdrtestbed"
+  }
+]

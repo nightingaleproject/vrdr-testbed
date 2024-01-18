@@ -1,0 +1,1933 @@
+﻿{
+    "resourceType": "Bundle",
+    "id": "03962946-77e0-4a3c-8b42-cde5be6f3699",
+    "type": "message",
+    "timestamp": "2023-11-27T13:21:43.2624627-05:00",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:37c7b7bf-5bef-461f-934c-88c2e6d592d1",
+            "resource": {
+                "resourceType": "Parameters",
+                "id": "37c7b7bf-5bef-461f-934c-88c2e6d592d1",
+                "parameter": [
+                    {
+                        "name": "cert_no",
+                        "valueUnsignedInt": 134
+                    },
+                    {
+                        "name": "state_auxiliary_id",
+                        "valueString": "000007324932"
+                    },
+                    {
+                        "name": "death_year",
+                        "valueUnsignedInt": 2023
+                    },
+                    {
+                        "name": "jurisdiction_id",
+                        "valueString": "OR"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:621fd819-5d89-4619-8aaf-9a2bf357aed0",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "621fd819-5d89-4619-8aaf-9a2bf357aed0",
+                "eventUri": "http://nchs.cdc.gov/vrdr_submission",
+                "destination": [
+                    {
+                        "endpoint": "http://nchs.cdc.gov/vrdr_submission"
+                    }
+                ],
+                "source": {
+                    "endpoint": "http://vitalchek.org/OR"
+                },
+                "focus": [
+                    {
+                        "reference": "urn:uuid:78a7c61d-a562-494e-9945-036e786c889f"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:78a7c61d-a562-494e-9945-036e786c889f",
+            "resource": {
+                "resourceType": "Bundle",
+                "id": "78a7c61d-a562-494e-9945-036e786c889f",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate-document"
+                    ]
+                },
+                "identifier": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/AuxiliaryStateIdentifier1",
+                            "valueString": "000007324932"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/CertificateNumber",
+                            "valueString": "000134"
+                        }
+                    ],
+                    "system": "http://nchs.cdc.gov/vrdr_id",
+                    "value": "2023OR000134"
+                },
+                "type": "document",
+                "timestamp": "2023-11-27T13:21:41.9030931-05:00",
+                "entry": [
+                    {
+                        "fullUrl": "urn:uuid:b8ac02c0-f27a-4d58-8c90-7671c15848b7",
+                        "resource": {
+                            "resourceType": "Composition",
+                            "id": "b8ac02c0-f27a-4d58-8c90-7671c15848b7",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certificate"
+                                ]
+                            },
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/FilingFormat",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-filing-format-cs",
+                                                "code": "electronic",
+                                                "display": "Electronic"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/ReplaceStatus",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-replace-status-cs",
+                                                "code": "original",
+                                                "display": "original record"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "status": "final",
+                            "type": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "64297-5",
+                                        "display": "Death certificate"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "date": "2023-11-21",
+                            "author": [
+                                {
+                                    "reference": "urn:uuid:dd2b55f0-3301-427a-b099-e3d95f33cadb"
+                                }
+                            ],
+                            "title": "Death Certificate",
+                            "attester": [
+                                {
+                                    "mode": "legal",
+                                    "time": "2023-11-21",
+                                    "party": {
+                                        "reference": "urn:uuid:dd2b55f0-3301-427a-b099-e3d95f33cadb"
+                                    }
+                                }
+                            ],
+                            "event": [
+                                {
+                                    "code": [
+                                        {
+                                            "coding": [
+                                                {
+                                                    "system": "http://snomed.info/sct",
+                                                    "code": "103693007",
+                                                    "display": "Diagnostic procedure (procedure)"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "detail": [
+                                        {
+                                            "reference": "urn:uuid:100bcbe3-800a-4b68-a461-a8c1999c63e7"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "section": [
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs",
+                                                "code": "DecedentDemographics"
+                                            }
+                                        ]
+                                    },
+                                    "entry": [
+                                        {
+                                            "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:d17fe2e4-58d3-43d7-80b5-3c36df423f41"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:1bee32bb-fdc8-4d71-83c7-550c5f82a436"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:5751ad0c-3e17-4b54-addc-762bc51ea225"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:1d3c267b-8f73-4b7c-9bcb-9f2cd4bd7f95"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:db7e2381-a2b8-4420-965d-64966aacee3e"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:4ff8f54b-2c9f-4166-a471-55553cf54d5d"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:4a421bd9-1dd3-459e-8c54-3dcdbcb04cc6"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:aef27ec9-5056-40e5-8a12-6c66937aeff3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs",
+                                                "code": "DeathCertification"
+                                            }
+                                        ]
+                                    },
+                                    "entry": [
+                                        {
+                                            "reference": "urn:uuid:dd2b55f0-3301-427a-b099-e3d95f33cadb"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:100bcbe3-800a-4b68-a461-a8c1999c63e7"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:fd6d2844-d047-40f1-bee5-17f998f8bd45"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:d8485b37-d01c-466c-9f6f-82ac617b4572"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:910034e0-806f-468c-b3b3-f828b0dfe2a0"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:ff9ace26-ad42-4e3e-8cde-53192811963f"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:a35cebed-c61a-49ee-ab9f-fb4c48252b05"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:b2ba17d7-5a0a-4934-a6fa-fb794d373065"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs",
+                                                "code": "DeathInvestigation"
+                                            }
+                                        ]
+                                    },
+                                    "entry": [
+                                        {
+                                            "reference": "urn:uuid:c90310ef-fddd-43c3-be85-a0e3f4ccf474"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:97c730b4-5c68-478b-8012-6eb3e26ff398"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:a76b8f33-d2fe-4a7f-b7ff-bd5ebf3aacd9"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:ec1fe101-81a3-49f0-a0b5-232aa808f6f9"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:61b27aed-b897-46bd-b586-9dc1082d5f36"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:b4de6432-9b1d-4367-923f-f3813a5db9a4"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-document-section-cs",
+                                                "code": "DecedentDisposition"
+                                            }
+                                        ]
+                                    },
+                                    "entry": [
+                                        {
+                                            "reference": "urn:uuid:d62fd6ba-668f-4532-b5d3-1c7da13e8971"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:4967c3ae-192b-451a-9081-cf2710b43636"
+                                        },
+                                        {
+                                            "reference": "urn:uuid:61891f12-af43-4de8-8c0e-498f0db5149a"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40",
+                        "resource": {
+                            "resourceType": "Patient",
+                            "id": "7cbec3d0-9478-4264-aef6-1bfb5c75ed40",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent"
+                                ]
+                            },
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/NVSS-SexAtDeath",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/administrative-gender",
+                                                "code": "female",
+                                                "display": "Female"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+                                    "valueAddress": {
+                                        "city": "Des Moines",
+                                        "state": "IA",
+                                        "country": "US"
+                                    }
+                                }
+                            ],
+                            "identifier": [
+                                {
+                                    "type": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                                "code": "SB",
+                                                "display": "Social Beneficiary Identifier"
+                                            }
+                                        ]
+                                    },
+                                    "system": "http://hl7.org/fhir/sid/us-ssn",
+                                    "value": "502478989"
+                                }
+                            ],
+                            "name": [
+                                {
+                                    "use": "official",
+                                    "family": "Fhir",
+                                    "given": [
+                                        "Data",
+                                        "Validation"
+                                    ],
+                                    "suffix": [
+                                        "II"
+                                    ]
+                                }
+                            ],
+                            "_birthDate": {
+                                "extension": [
+                                    {
+                                        "extension": [
+                                            {
+                                                "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year",
+                                                "valueUnsignedInt": 1985
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month",
+                                                "valueUnsignedInt": 8
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day",
+                                                "valueUnsignedInt": 4
+                                            }
+                                        ],
+                                        "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDate"
+                                    }
+                                ]
+                            },
+                            "address": [
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetNumber",
+                                            "valueString": "100"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/PreDirectional",
+                                            "valueString": "SW"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetName",
+                                            "valueString": "1st"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetDesignator",
+                                            "valueString": "Street"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/WithinCityLimitsIndicator",
+                                            "valueCoding": {
+                                                "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                                                "code": "Y",
+                                                "display": "Yes"
+                                            }
+                                        }
+                                    ],
+                                    "line": [
+                                        "100 SW 1st Street"
+                                    ],
+                                    "city": "Portland",
+                                    "_city": {
+                                        "extension": [
+                                            {
+                                                "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/CityCode",
+                                                "valuePositiveInt": 59000
+                                            }
+                                        ]
+                                    },
+                                    "district": "Multnomah",
+                                    "_district": {
+                                        "extension": [
+                                            {
+                                                "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/DistrictCode",
+                                                "valuePositiveInt": 51
+                                            }
+                                        ]
+                                    },
+                                    "state": "OR",
+                                    "postalCode": "97233",
+                                    "country": "US"
+                                }
+                            ],
+                            "maritalStatus": {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs",
+                                                    "code": "0",
+                                                    "display": "Edit Passed"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                                        "code": "S",
+                                        "display": "Never Married"
+                                    }
+                                ],
+                                "text": "Never married"
+                            },
+                            "contact": [
+                                {
+                                    "relationship": [
+                                        {
+                                            "coding": [
+                                                {
+                                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                                                    "code": "MTH",
+                                                    "display": "natural mother"
+                                                }
+                                            ],
+                                            "text": "Mother"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:dd2b55f0-3301-427a-b099-e3d95f33cadb",
+                        "resource": {
+                            "resourceType": "Practitioner",
+                            "id": "dd2b55f0-3301-427a-b099-e3d95f33cadb",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-certifier"
+                                ]
+                            },
+                            "name": [
+                                {
+                                    "use": "official",
+                                    "family": "Certifier",
+                                    "given": [
+                                        "Use For Regression Test",
+                                        "Medical"
+                                    ]
+                                }
+                            ],
+                            "address": [
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetNumber",
+                                            "valueString": "123"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/PreDirectional",
+                                            "valueString": "SE"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetName",
+                                            "valueString": "Any Street"
+                                        }
+                                    ],
+                                    "line": [
+                                        "123 SE Any Street Portland Oregon 97216 Multnomah"
+                                    ],
+                                    "city": "Portland",
+                                    "state": "OR",
+                                    "postalCode": "97216",
+                                    "country": "US"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:100bcbe3-800a-4b68-a461-a8c1999c63e7",
+                        "resource": {
+                            "resourceType": "Procedure",
+                            "id": "100bcbe3-800a-4b68-a461-a8c1999c63e7",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-certification"
+                                ]
+                            },
+                            "status": "completed",
+                            "category": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "103693007",
+                                        "display": "Diagnostic procedure"
+                                    }
+                                ]
+                            },
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "308646001",
+                                        "display": "Death certification"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "performedDateTime": "2023-11-21",
+                            "performer": [
+                                {
+                                    "function": {
+                                        "coding": [
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "434651000124107",
+                                                "display": "Death certification by physician (procedure)"
+                                            }
+                                        ]
+                                    },
+                                    "actor": {
+                                        "reference": "urn:uuid:dd2b55f0-3301-427a-b099-e3d95f33cadb"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:c90310ef-fddd-43c3-be85-a0e3f4ccf474",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "c90310ef-fddd-43c3-be85-a0e3f4ccf474",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-date"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "81956-5",
+                                        "display": "Date+time of death"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "_valueDateTime": {
+                                "extension": [
+                                    {
+                                        "extension": [
+                                            {
+                                                "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Year",
+                                                "valueUnsignedInt": 2023
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Month",
+                                                "valueUnsignedInt": 11
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Day",
+                                                "valueUnsignedInt": 8
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/Date-Time",
+                                                "valueTime": "15:51:00"
+                                            }
+                                        ],
+                                        "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/PartialDateTime"
+                                    }
+                                ]
+                            },
+                            "component": [
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://loinc.org",
+                                                "code": "58332-8",
+                                                "display": "Location of death"
+                                            }
+                                        ]
+                                    },
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "450391000124102",
+                                                "display": "Death in hospital-based emergency department or outpatient department"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:d17fe2e4-58d3-43d7-80b5-3c36df423f41",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "d17fe2e4-58d3-43d7-80b5-3c36df423f41",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-age"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "39016-1",
+                                        "display": "Age at death"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "valueQuantity": {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs",
+                                                    "code": "0",
+                                                    "display": "Edit Passed"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "value": 38,
+                                "unit": "Years",
+                                "system": "http://unitsofmeasure.org",
+                                "code": "a"
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:1bee32bb-fdc8-4d71-83c7-550c5f82a436",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "1bee32bb-fdc8-4d71-83c7-550c5f82a436",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-military-service"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "55280-2",
+                                        "display": "Military service Narrative"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                                        "code": "N",
+                                        "display": "No"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:5751ad0c-3e17-4b54-addc-762bc51ea225",
+                        "resource": {
+                            "resourceType": "RelatedPerson",
+                            "id": "5751ad0c-3e17-4b54-addc-762bc51ea225",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-father"
+                                ]
+                            },
+                            "active": true,
+                            "patient": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "relationship": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                                            "code": "FTH",
+                                            "display": "father"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "name": [
+                                {
+                                    "use": "official",
+                                    "family": "Fhir",
+                                    "given": [
+                                        "Data",
+                                        "Validation"
+                                    ],
+                                    "suffix": [
+                                        "I"
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:1d3c267b-8f73-4b7c-9bcb-9f2cd4bd7f95",
+                        "resource": {
+                            "resourceType": "RelatedPerson",
+                            "id": "1d3c267b-8f73-4b7c-9bcb-9f2cd4bd7f95",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-mother"
+                                ]
+                            },
+                            "active": true,
+                            "patient": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "relationship": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                                            "code": "MTH",
+                                            "display": "mother"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "name": [
+                                {
+                                    "use": "official",
+                                    "given": [
+                                        "Jane",
+                                        "Anne"
+                                    ]
+                                },
+                                {
+                                    "use": "maiden",
+                                    "family": "Bennett"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:d62fd6ba-668f-4532-b5d3-1c7da13e8971",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "d62fd6ba-668f-4532-b5d3-1c7da13e8971",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-disposition-method"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "80905-3",
+                                        "display": "Body disposition method"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "449951000124101",
+                                        "display": "Donation"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:4967c3ae-192b-451a-9081-cf2710b43636",
+                        "resource": {
+                            "resourceType": "Location",
+                            "id": "4967c3ae-192b-451a-9081-cf2710b43636",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-disposition-location"
+                                ]
+                            },
+                            "name": "Crown Memorial Center, Cremation & Burial - Eastside",
+                            "type": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-location-type-cs",
+                                            "code": "disposition",
+                                            "display": "disposition location"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "address": {
+                                "line": [
+                                    "Portland Oregon"
+                                ],
+                                "city": "Portland",
+                                "state": "OR",
+                                "country": "US"
+                            },
+                            "physicalType": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                        "code": "si",
+                                        "display": "Site"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:61891f12-af43-4de8-8c0e-498f0db5149a",
+                        "resource": {
+                            "resourceType": "Organization",
+                            "id": "61891f12-af43-4de8-8c0e-498f0db5149a",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-funeral-home"
+                                ]
+                            },
+                            "active": true,
+                            "type": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-organization-type-cs",
+                                            "code": "funeralhome",
+                                            "display": "Funeral Home"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "name": "American Burial and Cremation of Oregon",
+                            "address": [
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetNumber",
+                                            "valueString": "320"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/PreDirectional",
+                                            "valueString": "N"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetName",
+                                            "valueString": "6th"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetDesignator",
+                                            "valueString": "Street"
+                                        }
+                                    ],
+                                    "line": [
+                                        "320 N 6th Street Springfield Oregon 97477"
+                                    ],
+                                    "city": "Springfield",
+                                    "state": "OR",
+                                    "postalCode": "97477",
+                                    "country": "US"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:db7e2381-a2b8-4420-965d-64966aacee3e",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "db7e2381-a2b8-4420-965d-64966aacee3e",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-usual-work"
+                                ]
+                            },
+                            "status": "final",
+                            "category": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                            "code": "social-history"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "21843-8",
+                                        "display": "History of Usual occupation"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                                        "code": "UNK",
+                                        "display": "unknown"
+                                    }
+                                ],
+                                "text": "Teacher"
+                            },
+                            "component": [
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://loinc.org",
+                                                "code": "21844-6",
+                                                "display": "History of Usual industry"
+                                            }
+                                        ]
+                                    },
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                                                "code": "UNK",
+                                                "display": "unknown"
+                                            }
+                                        ],
+                                        "text": "Education"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:4ff8f54b-2c9f-4166-a471-55553cf54d5d",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "4ff8f54b-2c9f-4166-a471-55553cf54d5d",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-education-level"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "80913-7",
+                                        "display": "Highest level of education [US Standard Certificate of Death]"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "valueCodeableConcept": {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs",
+                                                    "code": "0",
+                                                    "display": "Edit Passed"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+                                        "code": "MA",
+                                        "display": "Master's degree"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:4a421bd9-1dd3-459e-8c54-3dcdbcb04cc6",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "4a421bd9-1dd3-459e-8c54-3dcdbcb04cc6",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-input-race-and-ethnicity"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-observations-cs",
+                                        "code": "inputraceandethnicity",
+                                        "display": "Input Race and Ethnicity"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "component": [
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "HispanicLiteral",
+                                                "display": "Hispanic Literal"
+                                            }
+                                        ]
+                                    },
+                                    "valueString": "Guatemalan"
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "HispanicMexican",
+                                                "display": "Hispanic Mexican"
+                                            }
+                                        ]
+                                    },
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                                                "code": "N",
+                                                "display": "No"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "HispanicPuertoRican",
+                                                "display": "Hispanic Puerto Rican"
+                                            }
+                                        ]
+                                    },
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                                                "code": "Y",
+                                                "display": "Yes"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "HispanicCuban",
+                                                "display": "Hispanic Cuban"
+                                            }
+                                        ]
+                                    },
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                                                "code": "Y",
+                                                "display": "Yes"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "HispanicOther",
+                                                "display": "Hispanic Other"
+                                            }
+                                        ]
+                                    },
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                                                "code": "Y",
+                                                "display": "Yes"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "White",
+                                                "display": "White"
+                                            }
+                                        ]
+                                    },
+                                    "valueBoolean": true
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "BlackOrAfricanAmerican",
+                                                "display": "Black Or African American"
+                                            }
+                                        ]
+                                    },
+                                    "valueBoolean": false
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "AmericanIndianOrAlaskanNative",
+                                                "display": "American Indian Or Alaskan Native"
+                                            }
+                                        ]
+                                    },
+                                    "valueBoolean": false
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "AsianIndian",
+                                                "display": "Asian Indian"
+                                            }
+                                        ]
+                                    },
+                                    "valueBoolean": false
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "Chinese",
+                                                "display": "Chinese"
+                                            }
+                                        ]
+                                    },
+                                    "valueBoolean": false
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "Filipino",
+                                                "display": "Filipino"
+                                            }
+                                        ]
+                                    },
+                                    "valueBoolean": false
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "Japanese",
+                                                "display": "Japanese"
+                                            }
+                                        ]
+                                    },
+                                    "valueBoolean": false
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "Korean",
+                                                "display": "Korean"
+                                            }
+                                        ]
+                                    },
+                                    "valueBoolean": false
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "Vietnamese",
+                                                "display": "Vietnamese"
+                                            }
+                                        ]
+                                    },
+                                    "valueBoolean": false
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "OtherAsian",
+                                                "display": "Other Asian"
+                                            }
+                                        ]
+                                    },
+                                    "valueBoolean": false
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "NativeHawaiian",
+                                                "display": "Native Hawaiian"
+                                            }
+                                        ]
+                                    },
+                                    "valueBoolean": false
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "GuamanianOrChamorro",
+                                                "display": "Guamanian Or Chamorro"
+                                            }
+                                        ]
+                                    },
+                                    "valueBoolean": false
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "Samoan",
+                                                "display": "Samoan"
+                                            }
+                                        ]
+                                    },
+                                    "valueBoolean": false
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "OtherPacificIslander",
+                                                "display": "Other Pacific Islander"
+                                            }
+                                        ]
+                                    },
+                                    "valueBoolean": false
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "OtherRace",
+                                                "display": "Other Race"
+                                            }
+                                        ]
+                                    },
+                                    "valueBoolean": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:fd6d2844-d047-40f1-bee5-17f998f8bd45",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "fd6d2844-d047-40f1-bee5-17f998f8bd45",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-manner-of-death"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "69449-7",
+                                        "display": "Manner of death"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "urn:uuid:dd2b55f0-3301-427a-b099-e3d95f33cadb"
+                                }
+                            ],
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "38605008",
+                                        "display": "Natural death"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:97c730b4-5c68-478b-8012-6eb3e26ff398",
+                        "resource": {
+                            "resourceType": "Location",
+                            "id": "97c730b4-5c68-478b-8012-6eb3e26ff398",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-death-location"
+                                ]
+                            },
+                            "name": "Legacy Emanuel Medical Center",
+                            "type": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-location-type-cs",
+                                            "code": "death",
+                                            "display": "death location"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "address": {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetNumber",
+                                        "valueString": "123"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/PreDirectional",
+                                        "valueString": "N"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/StreetName",
+                                        "valueString": "Any Street"
+                                    }
+                                ],
+                                "line": [
+                                    "123 N Any Street"
+                                ],
+                                "city": "Portland",
+                                "district": "Multnomah",
+                                "_district": {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/DistrictCode",
+                                            "valuePositiveInt": 51
+                                        }
+                                    ]
+                                },
+                                "state": "OR",
+                                "postalCode": "97227",
+                                "country": "US"
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:d8485b37-d01c-466c-9f6f-82ac617b4572",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "d8485b37-d01c-466c-9f6f-82ac617b4572",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-part1"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "69453-9",
+                                        "display": "Cause of death [US Standard Certificate of Death]"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "urn:uuid:dd2b55f0-3301-427a-b099-e3d95f33cadb"
+                                }
+                            ],
+                            "valueCodeableConcept": {
+                                "text": "A systolic"
+                            },
+                            "component": [
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "lineNumber",
+                                                "display": "line number"
+                                            }
+                                        ]
+                                    },
+                                    "valueInteger": 1
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://loinc.org",
+                                                "code": "69440-6",
+                                                "display": "Disease onset to death interval"
+                                            }
+                                        ]
+                                    },
+                                    "valueString": "Minutes"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:910034e0-806f-468c-b3b3-f828b0dfe2a0",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "910034e0-806f-468c-b3b3-f828b0dfe2a0",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-part1"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "69453-9",
+                                        "display": "Cause of death [US Standard Certificate of Death]"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "urn:uuid:dd2b55f0-3301-427a-b099-e3d95f33cadb"
+                                }
+                            ],
+                            "valueCodeableConcept": {
+                                "text": "Acute respiratory failure, ARDS, hypoxia"
+                            },
+                            "component": [
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "lineNumber",
+                                                "display": "line number"
+                                            }
+                                        ]
+                                    },
+                                    "valueInteger": 2
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://loinc.org",
+                                                "code": "69440-6",
+                                                "display": "Disease onset to death interval"
+                                            }
+                                        ]
+                                    },
+                                    "valueString": "Days"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:ff9ace26-ad42-4e3e-8cde-53192811963f",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "ff9ace26-ad42-4e3e-8cde-53192811963f",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-part1"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "69453-9",
+                                        "display": "Cause of death [US Standard Certificate of Death]"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "urn:uuid:dd2b55f0-3301-427a-b099-e3d95f33cadb"
+                                }
+                            ],
+                            "valueCodeableConcept": {
+                                "text": "Sarcoidosis, pulmonary fibrosis"
+                            },
+                            "component": [
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "lineNumber",
+                                                "display": "line number"
+                                            }
+                                        ]
+                                    },
+                                    "valueInteger": 3
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://loinc.org",
+                                                "code": "69440-6",
+                                                "display": "Disease onset to death interval"
+                                            }
+                                        ]
+                                    },
+                                    "valueString": "Days"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:a35cebed-c61a-49ee-ab9f-fb4c48252b05",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "a35cebed-c61a-49ee-ab9f-fb4c48252b05",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-part1"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "69453-9",
+                                        "display": "Cause of death [US Standard Certificate of Death]"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "urn:uuid:dd2b55f0-3301-427a-b099-e3d95f33cadb"
+                                }
+                            ],
+                            "valueCodeableConcept": {
+                                "text": "Septic shock with multiorgan failure"
+                            },
+                            "component": [
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-component-cs",
+                                                "code": "lineNumber",
+                                                "display": "line number"
+                                            }
+                                        ]
+                                    },
+                                    "valueInteger": 4
+                                },
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://loinc.org",
+                                                "code": "69440-6",
+                                                "display": "Disease onset to death interval"
+                                            }
+                                        ]
+                                    },
+                                    "valueString": "Hours"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:b2ba17d7-5a0a-4934-a6fa-fb794d373065",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "b2ba17d7-5a0a-4934-a6fa-fb794d373065",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-cause-of-death-part2"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "69441-4",
+                                        "display": "Other significant causes or conditions of death"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "performer": [
+                                {
+                                    "reference": "urn:uuid:dd2b55f0-3301-427a-b099-e3d95f33cadb"
+                                }
+                            ],
+                            "valueCodeableConcept": {
+                                "text": "Possible aspiration pneumonia, Biliary colic, Transaminitis"
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:a76b8f33-d2fe-4a7f-b7ff-bd5ebf3aacd9",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "a76b8f33-d2fe-4a7f-b7ff-bd5ebf3aacd9",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-autopsy-performed-indicator"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "85699-7",
+                                        "display": "Autopsy was performed"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                                        "code": "N",
+                                        "display": "No"
+                                    }
+                                ]
+                            },
+                            "component": [
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://loinc.org",
+                                                "code": "69436-4",
+                                                "display": "Autopsy results available"
+                                            }
+                                        ]
+                                    },
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                                                "code": "NA",
+                                                "display": "not applicable"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:ec1fe101-81a3-49f0-a0b5-232aa808f6f9",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "ec1fe101-81a3-49f0-a0b5-232aa808f6f9",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-tobacco-use-contributed-to-death"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "69443-0",
+                                        "display": "Did tobacco use contribute to death"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "373067005",
+                                        "display": "No"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:61b27aed-b897-46bd-b586-9dc1082d5f36",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "61b27aed-b897-46bd-b586-9dc1082d5f36",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-decedent-pregnancy-status"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "69442-2",
+                                        "display": "Timing of recent pregnancy in relation to death"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "valueCodeableConcept": {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/BypassEditFlag",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-bypass-edit-flag-cs",
+                                                    "code": "0",
+                                                    "display": "Edit Passed"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/us/vrdr/CodeSystem/vrdr-pregnancy-status-cs",
+                                        "code": "4",
+                                        "display": "Not pregnant, but pregnant 43 days to 1 year before death"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:b4de6432-9b1d-4367-923f-f3813a5db9a4",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "b4de6432-9b1d-4367-923f-f3813a5db9a4",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-examiner-contacted"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "74497-9",
+                                        "display": "Medical examiner or coroner was contacted [US Standard Certificate of Death]"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                                        "code": "N",
+                                        "display": "No"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:aef27ec9-5056-40e5-8a12-6c66937aeff3",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "aef27ec9-5056-40e5-8a12-6c66937aeff3",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/vrdr/StructureDefinition/vrdr-birth-record-identifier"
+                                ]
+                            },
+                            "status": "final",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                        "code": "BR",
+                                        "display": "Birth registry number"
+                                    }
+                                ]
+                            },
+                            "subject": {
+                                "reference": "urn:uuid:7cbec3d0-9478-4264-aef6-1bfb5c75ed40"
+                            },
+                            "dataAbsentReason": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                                        "code": "unknown",
+                                        "display": "Unknown"
+                                    }
+                                ]
+                            },
+                            "component": [
+                                {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://loinc.org",
+                                                "code": "21842-0",
+                                                "display": "Birthplace"
+                                            }
+                                        ]
+                                    },
+                                    "valueString": "IA"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
