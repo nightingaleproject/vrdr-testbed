@@ -1,0 +1,57 @@
+error Element Composition.date has minimum cardinality 1 but occurs 0 time(s).
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 78 - 115
+error Element Patient.name has minimum cardinality 1 but occurs 0 time(s).
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 117 - 153
+error Element Practitioner.identifier has minimum cardinality 1 but occurs 0 time(s).
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 155 - 158
+error Element Practitioner.name has minimum cardinality 1 but occurs 0 time(s).
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 155 - 158
+error Element RelatedPerson.name has minimum cardinality 1 but occurs 0 time(s).
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 212 - 218
+error Element RelatedPerson.name has minimum cardinality 1 but occurs 0 time(s).
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 220 - 226
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 340
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 341
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 342
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 343
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 354
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 355
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 356
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 357
+error InstanceOf InputRaceAndEthnicity not found for 00a699aa-e983-402d-84e2-39d350d8ff32
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 19 - 76
+error InstanceOf InputRaceAndEthnicity not found for 00a699aa-e983-402d-84e2-39d350d8ff32
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 359 - 403
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 426
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 427
+warn  Sliced element Observation.component is being accessed via numeric index. Use slice names in rule paths when possible.
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AS_c4a94e2c-3657-4c21-ad43-066dfd2e14d5_profilefix.fsh
+  Line: 428

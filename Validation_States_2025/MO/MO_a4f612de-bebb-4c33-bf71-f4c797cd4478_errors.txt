@@ -1,0 +1,12 @@
+error Element Composition.date has minimum cardinality 1 but occurs 0 time(s).
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\MO_a4f612de-bebb-4c33-bf71-f4c797cd4478_profilefix.fsh
+  Line: 87 - 134
+error Element Practitioner.identifier has minimum cardinality 1 but occurs 0 time(s).
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\MO_a4f612de-bebb-4c33-bf71-f4c797cd4478_profilefix.fsh
+  Line: 188 - 191
+error Element Practitioner.name has minimum cardinality 1 but occurs 0 time(s).
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\MO_a4f612de-bebb-4c33-bf71-f4c797cd4478_profilefix.fsh
+  Line: 188 - 191
+error Element Location.address has minimum cardinality 1 but occurs 0 time(s).
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\MO_a4f612de-bebb-4c33-bf71-f4c797cd4478_profilefix.fsh
+  Line: 254 - 260

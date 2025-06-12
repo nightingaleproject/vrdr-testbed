@@ -1,0 +1,6 @@
+error Element Practitioner.identifier has minimum cardinality 1 but occurs 0 time(s).
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\UT_5e4753c3-d311-40bc-afab-e557ed53ebc8_profilefix.fsh
+  Line: 238 - 241
+error Element Practitioner.name has minimum cardinality 1 but occurs 0 time(s).
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\UT_5e4753c3-d311-40bc-afab-e557ed53ebc8_profilefix.fsh
+  Line: 238 - 241

@@ -1,0 +1,6 @@
+error Element Practitioner.identifier has minimum cardinality 1 but occurs 0 time(s).
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AL_bc48199f-920e-4620-877f-d1347a2d989a_profilefix.fsh
+  Line: 199 - 206
+error Element Location.address has minimum cardinality 1 but occurs 0 time(s).
+  File: C:\Projects\NCHS_CDC\vrdr-testbed\input\fsh\AL_bc48199f-920e-4620-877f-d1347a2d989a_profilefix.fsh
+  Line: 482 - 488
